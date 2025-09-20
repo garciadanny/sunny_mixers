@@ -6,6 +6,17 @@ nav > .container {
   align-items: center;
 }
 
+nav .btn {
+  padding: 0.35rem 0.5rem;
+}
+
+/* Tablets */
+@media (min-width: 768px) {
+  nav .btn {
+    padding: 0.5rem 2rem;
+  }
+}
+
 /* Desktop */
 @media (min-width: 1024px) {
   nav > .container {
