@@ -19,6 +19,7 @@ module.exports = function (eleventyConfig) {
     dir: {
       input: "src",
       output: "_site",
-    }
+    },
+    pathPrefix: process.env.ELEVENTY_PRODUCTION ? "/sunny_mixers/" : "/"
   }
 };
