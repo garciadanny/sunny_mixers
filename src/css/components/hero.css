@@ -1,14 +1,18 @@
 .hero {
   background-size: cover;
-  background-position: bottom; /* or center */
+  background-position: bottom; 
   min-height: 50vh;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .hero-title {
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-hero);
+}
+
+.hidden-on-mobile {
   display: none;
 }
 

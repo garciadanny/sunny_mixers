@@ -45,15 +45,27 @@ a {
   font-weight: var(--font-weight-regular);
 }
 
+ul {
+  list-style-type: "⊹  ";
+  list-style-position: outside;
+}
+
+li {
+  font-family: var(--font-family-railway);
+  font-weight: var(--font-weight-light);
+  text-align: left;
+}
+
+.bold {
+  font-weight: var(--font-weight-bold);
+}
+
 /* Small tablets/large phones */
 @media (min-width: 576px) {
 }
 
 /* Tablets */
 @media (min-width: 768px) {
-  section {
-    padding: 4rem 0;
-  }
 }
 
 /* Desktop */

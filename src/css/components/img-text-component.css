@@ -1,0 +1,53 @@
+.img-text-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 0;
+
+  .img {
+    max-width: 400px;
+    aspect-ratio: 3/2; /* Maintains oval proportions */
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .text {
+    text-align: center;
+
+    *:not(:first-child) {
+      margin-top: 2rem;
+    }
+
+    ul {
+      margin: 2rem 0;
+      padding-left: 1rem;
+
+      li {
+        margin: 1rem 0;
+      }
+    }
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) {
+  .img-text-component {
+    flex-direction: row;
+    gap: 2rem;
+    padding: 6rem 1rem;
+
+    .text {
+      text-align: left;
+    }
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .img-text-component {
+    gap: 5rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

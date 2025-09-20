@@ -2,14 +2,16 @@
 permalink: /
 ---
 
+{% block head %}
+  <link rel="stylesheet" href="css/index/index.css?v={% version %}"/>
+{% endblock %}
+
 {% extends "src/_includes/layouts/base.njk" %}
 
 {% block content %}
   <div class="hero-wrapper">
     <section class="hero">
-      <div class="container">
-        <h1 class="hero-title">Sunny Mixers</h1>
-      </div>
+      <h1 class="hero-title hidden-on-mobile">Sunny Mixers</h1>
     </section>
 
     <section class="cta-menu-section">

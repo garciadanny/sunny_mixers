@@ -1,0 +1,95 @@
+---
+permalink: mixology.html
+---
+
+{% block head %}
+  <link rel="stylesheet" href="css/mixology/mixology.css?v={% version %}"/>
+{% endblock %}
+
+{% extends "src/_includes/layouts/base.njk" %}
+
+{% block content %}
+  <div class="hero-wrapper">
+    <section class="hero">
+      <h1 class="hero-title">Mixology Classes</h1>
+    </section>
+  </div>
+
+  <main>
+    <section class="booking-info">
+      <div class="container">
+        <h1>Book a Class</h1>
+        <p class="caption">
+          Fun and educational cocktail classses for the perfect night out or your private event.
+        </p>
+
+        <div class="img-text-component">
+          <img class="img" src="/assets/images/people_01.jpg" alt="Mixology class" />
+          <div class="text">
+            <p>
+              Dive into the spirited world of mixology with Sunny Mixers, your premier destination for cocktail crafting in
+              Orlando, FL! Our mixology classes offer more than just a drink—they're a hands-on experience teaching you the
+              art and science of cocktail making. Whether you're shaking up a date night, stirring a friend's outing, or
+              mixing a memorable corporate event, our classes promise an experience that’s both enlightening and
+              exhilarating. Get ready to unleash your inner mixologist and create lasting memories with every sip!
+            </p>
+            <p style="font-style: italic;">Prices starting at $90 per person.</p>
+            <a href="contact.html" class="btn btn--primary request-our-services-cta">Request a class</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="what-to-expect">
+      <div class="container">
+        <h1>What To Expect</h1>
+
+        <div class="img-text-component">
+          <img class="img" src="/assets/images/women-rejoicing.png" alt="Mixology class" />
+          <div class="text">
+            <p>
+              Our two-hour classes are designed to immerse you in the world of mixology.
+            </p>
+            <ul>
+              <li>
+                <strong class="bold">Craft Three Signature Cocktails</strong>: Under our expert guidance, you'll learn
+                how to mix, shake, and stir like a pro.
+              </li>
+              <li>
+                <strong class="bold">Educational & Fun Atmosphere</strong>: Discover the fascinating history behind each
+                cocktail and its ingredients.
+              </li>
+              <li>
+                <strong class="bold">All-Inclusive Experience</strong>: We provide everything you need—recipe cards, a
+                personal cocktail making kit, and top-quality ingredients.
+              </li>
+              <li>
+                <strong class="bold">Musical Vibes</strong>: Enjoy a curated playlist that keeps the energy high and the
+                creativity flowing.
+              </li>
+            </ul>
+            <p>
+              Whether you're here for a solo date night, fun outing with friends, a special date, or a corporate
+              event, our classes cater to all.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking-cta">
+      <div class="container">
+        <h2>Ready to book your next class?</h2>
+
+        <div class="cta-wrapper">
+          <p>Want to host a private class?</p>
+          <a href="contact.html" class="btn btn--primary request-our-services-cta">Request a class</a>
+
+          <p>Register for an upcoming cocktail class in Orlando, FL</p>
+          <a href="https://www.eventbrite.com/o/sunny-mixers-82180936683"
+            class="btn btn--primary">Book a class</a>
+        </div>
+      </div>
+    </section>
+  </main>
+{% endblock %}
