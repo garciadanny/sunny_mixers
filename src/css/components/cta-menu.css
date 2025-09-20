@@ -3,34 +3,29 @@
   display: grid;
   gap: 1rem;
   justify-items: center;
-  padding: 2rem 0;
+  padding: 2rem .5rem;
 
-  h3 {
-    font-family: var(--font-family-merriweather);
-    font-weight: var(--font-weight-light);
-  }
-
-  h4 {
+  .business-location {
     font-family: var(--font-family-railway);
     font-weight: var(--font-weight-light);
     font-size: 1.2rem;
     color: black;
   }
 
-  p {
-    text-align: center;
+  .business-name {
     font-family: var(--font-family-merriweather);
     font-weight: var(--font-weight-light);
+    font-size: 1.5rem;
+    color: var(--color-primary);
+  }
+
+  .business-services {
+    text-align: center;
   }
 
   .btn {
     width: 90%;
     padding: 0.5rem .75rem;
-    font-family: var(--font-family-merriweather);
-    font-weight: var(--font-weight-regular);
-  }
-
-  a {
     margin-top: 1.5rem;
   }
 }
@@ -46,9 +41,5 @@
 @media (min-width: 1024px) {
   .cta-menu {
     padding: 2.5rem 10rem;
-  }
-
-  p {
-    font-size: 1.2rem;
   }
 }
