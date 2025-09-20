@@ -1,0 +1,54 @@
+.cta-menu {
+  background-color: var(--background-color-secondary);
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+  padding: 2rem 0;
+
+  h3 {
+    font-family: var(--font-family-merriweather);
+    font-weight: var(--font-weight-light);
+  }
+
+  h4 {
+    font-family: var(--font-family-railway);
+    font-weight: var(--font-weight-light);
+    font-size: 1.2rem;
+    color: black;
+  }
+
+  p {
+    text-align: center;
+    font-family: var(--font-family-merriweather);
+    font-weight: var(--font-weight-light);
+  }
+
+  .btn {
+    width: 90%;
+    padding: 0.5rem .75rem;
+    font-family: var(--font-family-merriweather);
+    font-weight: var(--font-weight-regular);
+  }
+
+  a {
+    margin-top: 1.5rem;
+  }
+}
+
+/* Small tablets/large phones */
+@media (min-width: 576px) {
+  .cta-menu {
+    padding: 2.5rem 5rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .cta-menu {
+    padding: 2.5rem 10rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}

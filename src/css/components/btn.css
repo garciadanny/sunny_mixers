@@ -1,0 +1,31 @@
+.btn {
+  padding: 0.35rem 0.5rem;
+  border: solid 2px transparent;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  transition: filter 400ms, color 200ms;
+  font-family: var(--font-family-merriweather);
+  font-weight: var(--font-weight-regular);
+  text-align: center;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:focus-within,
+.btn:active {
+  transition: filter 250ms, color 200ms;
+}
+
+.btn--primary {
+  color: hsl(0, 0%, 100%);
+  background-color: var(--color-primary);
+}
+
+.btn--primary:hover,
+.btn--primary:focus,
+.btn--primary:focus-within,
+.btn--primary:active {
+  color: hsl(0, 0%, 100%);
+  filter: saturate(1.4) brightness(115%);
+}

@@ -12,10 +12,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
     <link rel="stylesheet" href="css/index.css?v={% version %}"/>
     {% block head %}{% endblock %}
+    <script src="https://kit.fontawesome.com/4ddff9f81c.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    {% include "partials/_navigation.njk" %}
+
     {% block content %}
       {{ content | safe }}
     {% endblock %}
+
+    {% include "partials/_social-media.njk" %}
+    {% include "partials/_footer.njk" %}
   </body>
 </html>

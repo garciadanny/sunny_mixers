@@ -4,6 +4,8 @@ module.exports = function (eleventyConfig) {
   // === PASSTHROUGH COPY ===
   // Copy the entire styles directory to output
   eleventyConfig.addPassthroughCopy("src/css/");
+  // Copy assets directory to output
+  eleventyConfig.addPassthroughCopy("src/assets/");
 
   // === WATCH TARGETS ===
   // Watch CSS files for changes during development

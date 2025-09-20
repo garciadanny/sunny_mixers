@@ -1,0 +1,54 @@
+.hero {
+  background-image: url('/assets/images/sunny_mixers_hero_02.jpg');
+}
+
+.cta-menu-section {
+  margin: -8rem 2rem 0 2rem;
+  width: fit-content;
+}
+
+.intro {
+  text-align: center;
+  line-height: 2.5rem;
+
+  .intro-welcome {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-primary);
+  }
+  
+  p {
+    margin: 0 auto;
+  }
+}
+
+.services {
+  display: grid;
+  justify-items: center;
+  background-color: var(--background-color-secondary);
+
+  .container {
+    display: contents; /* Makes the container invisible to grid */
+  }
+}
+
+/* Small tablets/large phones in landscape */
+@media (min-width: 576px) {
+  .cta-menu-section {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .intro {
+    .intro-welcome {
+      font-size: 1.6rem;
+    }
+  }
+  
+  .cta-menu-section {
+    margin-top: -12rem;
+  }
+}

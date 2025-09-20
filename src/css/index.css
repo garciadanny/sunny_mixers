@@ -1,2 +1,20 @@
 @import "reset.css";
 @import "base.css";
+@import "typography.css";
+
+/* Components */
+@import "components/container.css";
+@import "components/hero.css";
+@import "components/top-bar.css";
+@import "components/btn.css";
+@import "components/nav.css";
+@import "components/service-card.css";
+@import "components/social-media.css";
+@import "components/footer.css";
+@import "components/cta-menu.css";
+@import "components/logo.css";
+
+
+
+/* Pages */
+@import "index/index.css"

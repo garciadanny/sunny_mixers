@@ -1,0 +1,37 @@
+.hero {
+  background-size: cover;
+  background-position: bottom; /* or center */
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-title {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-hero);
+  display: none;
+}
+
+/* Small tablets/large phones */
+@media (min-width: 576px) {
+}
+
+/* Tablets */
+@media (min-width: 768px) {
+  .hero {
+    min-height: 60vh;
+    background-position: center;
+  }
+
+  .hero-title {
+    display: block;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .hero {
+    min-height: 70vh;
+    background-position: bottom;
+  }
+}

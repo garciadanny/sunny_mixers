@@ -1,0 +1,13 @@
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .logo {
+    width: 130px;
+    height: 130px;
+  }
+}

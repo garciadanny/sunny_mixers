@@ -1,5 +1,68 @@
 :root {
+  --color-primary: #ff7300;
+  --background-color-primary: rgb(255, 255, 255);
+  --background-color-secondary: rgb(248, 245, 245, 0.885);
+  --max-reading-width: clamp(300px, 65ch, 800px);
 }
 
 body {
+  background-color: var(--background-color-primary);
+}
+
+section {
+  padding: 3rem 0;
+}
+
+p {
+  font-family: var(--font-family-railway);
+  font-weight: var(--font-weight-light);
+  max-width: var(--max-reading-width);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-italiana);
+  font-style: normal;
+  color: var(--color-primary);
+  text-align: center;
+}
+
+h1 {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-regular);
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+  font-weight: var(--font-weight-regular);
+}
+
+/* Small tablets/large phones */
+@media (min-width: 576px) {
+}
+
+/* Tablets */
+@media (min-width: 768px) {
+  section {
+    padding: 4rem 0;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  section {
+    padding: 6rem 0;
+  }
+  
+  p {
+    font-size: 1.5rem;
+  }
 }

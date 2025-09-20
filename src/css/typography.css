@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Merriweather:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+:root {
+  --font-family-railway: 'Raleway', sans-serif;
+  --font-family-merriweather: 'Merriweather', serif;
+  --font-family-italiana: 'Italiana', sans-serif;
+  --font-weight-extra-light: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --font-size-hero: clamp(3.5rem, 11vw, 12rem);
+  --font-size-lg: clamp(3.5rem, 9vw, 10rem);
+}
+
+.font-railway-light {
+  font-family: var(--font-family-railway);
+  font-weight: var(--font-weight-light);
+}
+
+.font-railway-reg {
+  font-family: var(--font-family-railway);
+  font-weight: var(--font-weight-regular);
+}
+
+.font-railway-extra-light-italic {
+  font-family: var(--font-family-railway);
+  font-weight: var(--font-weight-extra-light);
+  font-style: italic;
+}
+
+.font-railway-bold {
+  font-family: var(--font-family-railway);
+  font-weight: var(--font-weight-bold);
+}
+
+.font-merriweather-light {
+  font-family: var(--font-family-merriweather);
+  font-weight: var(--font-weight-light);
+}
+
+.font-merriweather-reg {
+  font-family: var(--font-family-merriweather);
+  font-weight: var(--font-weight-regular);
+}
+
+.font-italiana-reg {
+  font-family: var(--font-family-italiana);
+  font-weight: var(--font-weight-regular);
+  font-style: normal;
+}

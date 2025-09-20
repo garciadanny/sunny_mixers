@@ -1,0 +1,4 @@
+.top-bar {
+  padding: .1rem;
+  background-image: linear-gradient(to right, rgba(255, 115, 0, 1) 0%, rgba(255, 130, 0, 1) 45%, rgba(255, 145, 0, 1) 100%);
+}

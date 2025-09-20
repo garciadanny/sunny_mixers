@@ -1,0 +1,18 @@
+<div class="top-bar" aria-hidden="true"></div>
+<nav>
+  <div class="container">
+    <a href="/">
+      <img class="logo" src="/assets/images/logo.png" alt="Sunny Mixers logo" />
+    </a>
+
+    {% if page.url == "/" or page.url == "/packages/" %}
+      <a href="/contact" class="btn btn--primary">
+        Request Our Services
+      </a>
+    {% elif page.url == "/contact/" or page.url == "/mixology/" %}
+      <a href="https://www.eventbrite.com/o/sunny-mixers-82180936683" class="btn btn--primary">
+        Book a Class
+      </a>
+    {% endif %}
+  </div>
+</nav>

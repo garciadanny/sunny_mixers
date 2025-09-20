@@ -5,10 +5,43 @@ permalink: /
 {% extends "src/_includes/layouts/base.njk" %}
 
 {% block content %}
-  <div class="fixed inset-0 flex justify-center items-center">
-    <div>
-      <span class="text-change">Good design</span><br/>
-      <span class="change">is<br/>as little design<br/>as possible</span>
-    </div>
+  <div class="hero-wrapper">
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero-title">Sunny Mixers</h1>
+      </div>
+    </section>
+
+    <section class="cta-menu-section">
+      <div class="cta-menu">
+        <h4>Orlando, FL</h4>
+        <h3>Sunny Mixers</h3>
+        <p>Celebrations | Corporate Events | Weddings | Brand Launches</p>
+        <a href="mixology.html" class="btn btn--primary">MIXOLOGY CLASSES</a>
+      </div>
+    </section>
   </div>
+
+  <main>
+    <section class="intro">
+      <div class="container">
+        <p>
+          <span class="intro-welcome">Welcome to Sunny Mixers!</span> As your premier mobile mixology lab + bar in Orlando, FL, 
+          we thrive in creating memorable moments. Whether it's a public or private mixology class, our goal is always to mix up
+          delicious signature drinks that keep the good vibes flowing. 
+        </p>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <h1>Our Services</h1>
+
+        <div class="service-card">
+          {# <img src="/assets/images/mixology_banner_02.jpg" alt="Cocktail" width="300" height="300" /> #}
+          <a href="mixology.html" class="btn btn--primary">MIXOLOGY CLASSES</a>
+        </div>
+      </div>
+    </section>
+  </main>
 {% endblock %}
