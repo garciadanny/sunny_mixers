@@ -4,6 +4,7 @@
   gap: 1rem;
   justify-items: center;
   padding: 2rem .5rem;
+  z-index: 10;
 
   .business-location {
     font-family: var(--font-family-railway);
