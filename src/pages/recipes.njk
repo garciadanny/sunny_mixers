@@ -1,0 +1,38 @@
+---
+permalink: recipes.html
+---
+
+{% block head %}
+  <link rel="stylesheet" href="css/recipes/recipes.css?v={% version %}"/>
+{% endblock %}
+
+{% extends "src/_includes/layouts/base.njk" %}
+
+{% block content %}
+  <div class="hero-wrapper">
+    <section class="hero">
+      <h1 class="hero-title">Sunny's Recipes</h1>
+    </section>
+  </div>
+
+  <main>
+    <section class="">
+      <div class="container">
+      </div>
+    </section>
+
+    <section class="">
+      <div class="container">
+        <h1>Featured Recipes</h1>
+
+        <div class="img-text-component">
+        </div>
+      </div>
+    </section>
+
+    <section class="">
+      <div class="container">
+      </div>
+    </section>
+  </main>
+{% endblock %}
