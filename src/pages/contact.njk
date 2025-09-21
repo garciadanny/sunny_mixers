@@ -4,6 +4,7 @@ permalink: contact.html
 
 {% block head %}
   <link rel="stylesheet" href="css/contact/contact.css?v={% version %}"/>
+  <script src="js/contact/form-submitter.js?v={% version %}" defer></script>
 {% endblock %}
 
 {% extends "src/_includes/layouts/base.njk" %}
@@ -16,30 +17,31 @@ permalink: contact.html
   </div>
 
   <main>
-    <section class="flash-messages">
-      <div class="container">
-        {% include "partials/_form_flash_messages.njk" %}
-      </div>
-    </section>
-
     <div id="overlay"></div>
 
-    <section class="notice">
-      <div class="container">
-        <p class="bold grey">Thank you so much for your incredible support!</p>
-        <p>
-          We are currently fully committed through the end of 2025. Our next availability begins February 2026.
-        </p>
-        <p>
-          If you’re planning ahead and would like to inquire about future dates, feel free to fill out the form below.
-          We can’t wait to mix & celebrate with you in the new year!
-        </p>
+    <section class="notice-section">
+      <div class="notice">
+        <div class="container">
+          <p class="bold grey">Thank you so much for your incredible support!</p>
+          <p>
+            We are currently fully committed through the end of 2025. Our next availability begins February 2026.
+          </p>
+          <p>
+            If you’re planning ahead and would like to inquire about future dates, feel free to fill out the form below.
+            We can’t wait to mix & celebrate with you in the new year!
+          </p>
+        </div>
       </div>
     </section>
+
+    <div class="form-flash-messages-wrapper">
+      {% include "partials/_form_flash_messages.njk" %}
+    </div>
 
     <section class="contact-form-section">
       <div class="container">
         <form method="POST"
+          action="https://script.google.com/macros/s/AKfycbzITkzLVBXEDDOkzyqcVguDMQxWHpzdQrxAGL_m7NJwsSFNwiX2WEmRGnUBxt-XMNmEXQ/exec"
           class="contact-form" id="contact-form">
           <div>
             <label for="name" class="required">Name</label>
