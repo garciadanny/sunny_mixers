@@ -1,0 +1,170 @@
+---
+permalink: contact.html
+---
+
+{% block head %}
+  <link rel="stylesheet" href="css/contact/contact.css?v={% version %}"/>
+{% endblock %}
+
+{% extends "src/_includes/layouts/base.njk" %}
+
+{% block content %}
+  <div class="hero-wrapper">
+    <section class="hero">
+      <h1 class="hero-title">Contact Us</h1>
+    </section>
+  </div>
+
+  <main>
+    <section class="flash-messages">
+      <div class="container">
+        {% include "partials/_form_flash_messages.njk" %}
+      </div>
+    </section>
+
+    <div id="overlay"></div>
+
+    <section class="notice">
+      <div class="container">
+        <p class="bold grey">Thank you so much for your incredible support!</p>
+        <p>
+          We are currently fully committed through the end of 2025. Our next availability begins February 2026.
+        </p>
+        <p>
+          If you’re planning ahead and would like to inquire about future dates, feel free to fill out the form below.
+          We can’t wait to mix & celebrate with you in the new year!
+        </p>
+      </div>
+    </section>
+
+    <section class="contact-form-section">
+      <div class="container">
+        <form method="POST"
+          class="contact-form" id="contact-form">
+          <div>
+            <label for="name" class="required">Name</label>
+            <input id="name" name="name" type="text" placeholder="first name & last name" autocomplete="name" required>
+          </div>
+
+          <div>
+            <label for="email" class="required">Email</label>
+            <input id="email" name="email" type="email" placeholder="ie: hello@example.com" autocomplete="email" required>
+          </div>
+
+          <div>
+            <label for="tel" class="required">Phone</label>
+            <input type="tel" id="tel" name="telephone" placeholder="ie: 407-111-2222" autocomplete="tel" required />
+          </div>
+
+          <fieldset>
+            <legend>Best way to reach you:</legend>
+
+            <div>
+              <input type="radio" id="best-way-to-reach-you-email" name="contact-method" value="email" />
+              <label for="best-way-to-reach-you-email" class="radio-label">Email</label>
+            </div>
+
+            <div>
+              <input type="radio" id="best-way-to-reach-you-text" name="contact-method" value="text" />
+              <label for="best-way-to-reach-you-text" class="radio-label">Text</label>
+            </div>
+
+            <div>
+              <input type="radio" id="best-way-to-reach-you-phone" name="contact-method" value="phone" />
+              <label for="best-way-to-reach-you-phone" class="radio-label">Phone call</label>
+            </div>
+          </fieldset>
+
+          <div>
+            <label for="event-date" class="required">Event date</label>
+            <input type="date" id="event-date" name="event-date" required />
+          </div>
+
+          <fieldset>
+            <legend>Type of Event</legend>
+
+            <div>
+              <input id="wedding" type="radio" name="event-type" value="wedding" />
+              <label for="wedding" class="radio-label">Wedding</label>
+            </div>
+
+            <div>
+              <input id="corporate" type="radio" name="event-type" value="corporate" />
+              <label for="corporate" class="radio-label">Corporate</label>
+            </div>
+
+            <div>
+              <input id="birthday" type="radio" name="event-type" value="birthday" />
+              <label for="birthday" class="radio-label">Birthday</label>
+            </div>
+
+            <div>
+              <input id="bridal" type="radio" name="event-type" value="bridal" />
+              <label for="bridal" class="radio-label">Bridal</label>
+            </div>
+
+            <div>
+              <input id="baby-shower" type="radio" name="event-type" value="baby-shower" />
+              <label for="baby-shower" class="radio-label">Baby Shower</label>
+            </div>
+
+            <div>
+              <input id="engagement-party" type="radio" name="event-type" value="engagement-party" />
+              <label for="engagement-party" class="radio-label">Engagement Party</label>
+            </div>
+
+            <div>
+              <input id="graduation" type="radio" name="event-type" value="graduation" />
+              <label for="graduation" class="radio-label">Graduation</label>
+            </div>
+
+            <div>
+              <input id="other" type="radio" name="event-type" value="other" />
+              <label for="other" class="radio-label">Other</label>
+            </div>
+          </fieldset>
+
+          <div>
+            <label for="guest-count" class="required">Estimated guest count</label>
+            <input id="guest-count" type="number" name="guest-count" placeholder="ie: 55" min="1" required />
+          </div>
+
+          <fieldset>
+            <div class="event-duration">
+              <legend>Duration of event</legend>
+              <div class="start-time">
+                <label for="start-time">From:</label>
+                <input id="start-time" type="time" value="17:00" name="start-time">
+              </div>
+
+              <div class="end-time">
+                <label for="end-time">To:</label>
+                <input id="end-time" type="time" value="22:00" name="end-time">
+              </div>
+            </div>
+          </fieldset>
+
+          <div>
+            <label for="event-location" class="required">Event location</label>
+            <input id="event-location" type="text" name="event-location" placeholder="ie: 123 Main St." required />
+          </div>
+
+          <div>
+            <label for="additional-information">Anything else we should know?</label>
+            <textarea id="additional-information" name="additional-information" rows="5"></textarea>
+          </div>
+
+          <div>
+            <label for="how-did-you-hear-about-us">How did you hear about us?</label>
+            <input id="how-did-you-hear-about-us" type="text" name="how-did-you-hear-about-us"
+              placeholder="ie: Instagram">
+          </div>
+
+          <div>
+            <button class="btn btn--primary" type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+{% endblock %}

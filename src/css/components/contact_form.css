@@ -1,0 +1,30 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0 auto;
+
+  .event-duration {
+    display: grid;
+    grid-template-areas:
+      "legend legend"
+      "start-time end-time";
+
+    legend {
+      grid-area: legend;
+    }
+
+    .start-time {
+      grid-area: start-time;
+    }
+
+    .end-time {
+      grid-area: end-time;
+    }
+  }
+
+  button[type="submit"] {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}

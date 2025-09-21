@@ -1,0 +1,78 @@
+form {
+  max-width: 800px;
+
+  input {
+    border: none;
+    border-bottom: .1rem solid #888787;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="date"],
+  input[type="email"],
+  input[type="number"] {
+    width: 100%;
+    display: block;
+    margin: 1rem 0;
+    background-color: white;
+    color: #666666;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  input[type="time"] {
+    background-color: var(--background-color-secondary); 
+    border-bottom: none;
+    color: #666666;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  label {
+    font-family: var(--font-family-railway);
+    font-weight: var(--font-weight-regular);
+    font-size: 1.4rem;
+    color: #666666;
+  }
+
+  label[for=start-time],
+  label[for=end-time] {
+    font-size: 1.2rem;
+  }
+
+  textarea {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  fieldset {
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+
+    legend {
+      font-family: var(--font-family-railway);
+      font-weight: var(--font-weight-regular);
+      font-size: 1.4rem;
+      color: #666666;
+      margin-bottom: 1rem;
+    }
+
+    label.radio-label {
+      font-size: 1rem;
+      color: black;
+    }
+  }
+
+  textarea:focus,
+  input:focus {
+    outline: none;
+  }
+
+  .required::after {
+    content: " *";
+    color: red;
+  }
+}

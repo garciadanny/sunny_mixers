@@ -1,0 +1,18 @@
+.hero {
+  background-image: url('/assets/images/contact_hero.jpg');
+  background-position: center; 
+}
+
+.notice {
+  background-color: rgba(35, 78, 82, var(--text-opacity));
+  text-align: center;
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: fit-content;
+  border-top: .3rem solid #ff7300;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  p:not(:first-child) {
+    margin-top: 1rem;
+  }
+}
