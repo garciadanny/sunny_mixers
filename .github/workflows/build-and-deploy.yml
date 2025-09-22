@@ -34,6 +34,17 @@ jobs:
       - name: Build site
         run: npm run prod
 
+      - name: Debug - Check if assets were built
+        run: |
+          echo "Contents of _site:"
+          ls -la _site/
+          echo ""
+          echo "Contents of _site/assets:"
+          ls -la _site/assets/ || echo "No assets directory found"
+          echo ""
+          echo "Looking for image files:"
+          find _site/ -name "*.jpg" -o -name "*.png" -o -name "*.jpeg" -o -name "*.webp" | head -20 || echo "No images found"
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
