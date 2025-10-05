@@ -8,6 +8,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets/");
   // Copy JavaScript files to output
   eleventyConfig.addPassthroughCopy("src/js/");
+  // Copy CMS config file to output
+  eleventyConfig.addPassthroughCopy("src/admin/config.yml");
 
   // === WATCH TARGETS ===
   // Watch CSS files for changes during development
@@ -16,6 +18,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("src/assets/**/*");
   // Watch JS files for changes during development
   eleventyConfig.addWatchTarget("src/js/**/*.js");
+  // Watch CMS config file for changes during development
+  eleventyConfig.addWatchTarget("src/admin/config.yml");
 
   eleventyConfig.addShortcode('version', function () {
     return now
