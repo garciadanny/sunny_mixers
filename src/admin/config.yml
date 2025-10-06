@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: garciadanny/sunny_mixers 
   branch: main 
 media_folder: "src/assets/images/uploads"
 collections:
