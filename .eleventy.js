@@ -25,6 +25,11 @@ module.exports = function (eleventyConfig) {
     return now
   })
 
+  // Create a collection for blog posts
+  eleventyConfig.addCollection("blog", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/_posts/blog/*.md");
+  });
+
   return {
     dir: {
       input: "src",

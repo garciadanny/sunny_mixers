@@ -1,0 +1,21 @@
+---
+permalink: /blog.html
+layout: layouts/base.njk
+---
+
+{% block head %}
+  <link rel="stylesheet" href="css/index/index.css?v={% version %}"/>
+{% endblock %}
+
+{% block content %}
+  <h1>blog index page!</h1>
+
+  <div class="blog-list">
+    {% for post in collections.blog | reverse %}
+      <article class="blog-preview">
+        <h2>{{ post.data.title }}</h2>
+        <a href="{{ post.url }}" class="read-more">Read More →</a>
+      </article>
+    {% endfor %}
+  </div>
+{% endblock %}
