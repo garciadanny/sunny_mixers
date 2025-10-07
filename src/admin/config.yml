@@ -3,6 +3,10 @@ backend:
   repo: garciadanny/sunny_mixers 
   branch: main 
 media_folder: "src/assets/images/uploads"
+media_library:
+  name: uploadcare
+  config:
+    publicKey: 5c8f705924ff3b7913ef
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
