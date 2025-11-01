@@ -3,6 +3,10 @@ layout: layouts/base.njk
 permalink: /blog/{{ page.fileSlug }}/ 
 ---
 
+{% block head %}
+  <link rel="stylesheet" href="/css/blog/blog.css?v={% version %}"/>
+{% endblock %}
+
 <div class="container">
   <article>
     <h1>{{ title }}</h1>

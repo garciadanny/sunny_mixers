@@ -2,6 +2,7 @@
   --color-primary: #ff7300;
   --background-color-primary: rgb(255, 255, 255);
   --background-color-secondary: rgb(248, 245, 245, 0.885);
+  --paragraph-color-secondary: #666; 
   --max-reading-width: clamp(300px, 65ch, 800px);
 }
 
