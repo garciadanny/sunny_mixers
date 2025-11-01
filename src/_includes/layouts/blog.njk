@@ -6,7 +6,10 @@ permalink: /blog/{{ page.fileSlug }}/
 <div class="container">
   <article>
     <h1>{{ title }}</h1>
-    <p class="post-date">{{ date | formatBlogDate }}</p>
+
+    <time class="post-date" datetime="{{ date | isoDate }}">
+      {{ date | formatBlogDate }}
+    </time>
 
     {% block content %}
       {{ content | safe }}

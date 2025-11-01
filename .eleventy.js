@@ -43,6 +43,12 @@ module.exports = function (eleventyConfig) {
     });
   });
 
+  // Machine readable date filter
+  eleventyConfig.addFilter("isoDate", function(date) {
+    if (!date) return '';
+    return new Date(date).toISOString().split('T')[0];
+  });
+
   return {
     dir: {
       input: "src",
