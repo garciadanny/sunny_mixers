@@ -30,6 +30,19 @@ module.exports = function (eleventyConfig) {
     return collectionApi.getFilteredByGlob("src/_posts/blog/*.md");
   });
 
+  // === FILTERS ===
+  // Add date filter for formatting dates in blog posts
+  eleventyConfig.addFilter("formatBlogDate", function(date) {
+    if (!date) return '';
+    const d = new Date(date);
+    
+    return d.toLocaleDateString('en-US', { 
+      year: 'numeric', 
+      month: 'long', 
+      day: 'numeric' 
+    });
+  });
+
   return {
     dir: {
       input: "src",
