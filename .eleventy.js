@@ -1,4 +1,6 @@
 const now = String(Date.now())
+const markdownIt = require("markdown-it");
+const markdownItImplicitFigures = require("markdown-it-implicit-figures");
 
 module.exports = function (eleventyConfig) {
   // === PASSTHROUGH COPY ===
@@ -48,6 +50,21 @@ module.exports = function (eleventyConfig) {
     if (!date) return '';
     return new Date(date).toISOString().split('T')[0];
   });
+
+  // === MARKDOWN SETTINGS ===
+  // Automatically convert <p><img></p> to <figure><img></figure>
+  let options = {
+    html: true,
+    breaks: true,
+    linkify: true
+  };
+
+  let md = markdownIt(options).use(markdownItImplicitFigures, {
+    dataType: true,  // <figure data-type="image">, default: false
+    figcaption: true
+  });
+
+  eleventyConfig.setLibrary("md", md);
 
   return {
     dir: {

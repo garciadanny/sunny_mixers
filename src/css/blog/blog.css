@@ -9,12 +9,21 @@ article {
     color: var(--paragraph-color-secondary);
   }
 
-  img {
-    max-width: 80%;
-    height: auto;
-    justify-self: center;
+  figure {
     margin: 2rem auto;
-    border-radius: 5%;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+
+    img {
+      max-width: 50%;
+      height: auto;
+      justify-self: center;
+      border-radius: 5%;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    
+    figcaption {
+      text-align: center;
+      font-size: 1rem;
+      color: var(--paragraph-color-secondary);
+      margin-top: 0.5rem;
   }
 }

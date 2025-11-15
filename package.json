@@ -7,7 +7,6 @@
     "start": "npx @11ty/eleventy --serve --port 9090",
     "build": "npx @11ty/eleventy",
     "clean": "rm -rf _site",
-
     "dev": "npm run clean && npm run start",
     "prod": "npm run clean && NODE_ENV=production ELEVENTY_PRODUCTION=true npm run build"
   },
@@ -17,5 +16,9 @@
   "type": "commonjs",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2"
+  },
+  "dependencies": {
+    "markdown-it": "^14.1.0",
+    "markdown-it-implicit-figures": "^0.12.0"
   }
 }
