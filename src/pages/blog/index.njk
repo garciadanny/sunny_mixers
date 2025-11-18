@@ -4,18 +4,34 @@ layout: layouts/base.njk
 ---
 
 {% block head %}
-  <link rel="stylesheet" href="css/index/index.css?v={% version %}"/>
+  <link rel="stylesheet" href="/css/blog/index.css?v={% version %}"/>
 {% endblock %}
 
 {% block content %}
-  <h1>blog index page!</h1>
 
-  <div class="blog-list">
-    {% for post in collections.blog | reverse %}
-      <article class="blog-preview">
-        <h2>{{ post.data.title }}</h2>
-        <a href="{{ post.url }}" class="read-more">Read More →</a>
-      </article>
-    {% endfor %}
+  <h1>Sunny Mixers Blog</h1>
+  <div class="container">
+    <div class="blog-list">
+      {% for post in collections.blog | reverse %}
+        <article class="blog-preview">
+          {% if post.data.thumbnail %}
+            <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" class="blog-preview-image">
+          {% endif %}
+          <h2>
+            <a href="{{ post.url }}">
+              <span class="link-to-article"></span>
+              {{ post.data.title }}
+            </a>
+          </h2>
+          <time class="post-date" datetime="{{ post.data.date | isoDate }}">
+            {{ post.data.date | formatBlogDate }}
+          </time>
+          {% if post.data.excerpt %}
+            <p>{{ post.data.excerpt }}</p>
+          {% endif %}
+          {# <a href="{{ post.url }}" class="read-more">Read More →</a> #}
+        </article>
+      {% endfor %}
+    </div>
   </div>
 {% endblock %}

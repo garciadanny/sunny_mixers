@@ -1,0 +1,39 @@
+.blog-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+  gap: 2rem;
+
+  .blog-preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+
+    position: relative;
+    padding: 1rem;
+    /* background-color: var(--background-color-secondary); */
+    border-radius: 5%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      transform: translateY(-5px);
+      transition: all 0.3s ease;
+      cursor: pointer;      
+    }
+
+    .blog-preview-image {
+      object-fit: cover;
+      aspect-ratio: 3/2;
+    }
+
+    .link-to-article {
+      position: absolute;
+      inset: 0;
+    }
+  }
+}
+
+/* Small tablets/large phones in landscape */
+@media (min-width: 576px) {
+}
+
