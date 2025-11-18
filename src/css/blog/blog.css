@@ -8,14 +8,19 @@ article {
     font-size: 1.5rem;
     color: var(--paragraph-color-secondary);
   }
+  
+  p {
+    padding: 0 0.5rem;
+  }
+  
 
   figure {
     margin: 2rem auto;
 
     img {
-      max-width: 50%;
       height: auto;
-      justify-self: center;
+      max-width: 90%;
+      margin: auto;
       border-radius: 5%;
       box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
@@ -25,5 +30,18 @@ article {
       font-size: 1rem;
       color: var(--paragraph-color-secondary);
       margin-top: 0.5rem;
+    }
+  }
+}
+
+/* Tablets and up*/
+@media (min-width: 768px) {
+  article {
+    figure {
+      img {
+        max-width: 50%;
+        margin: auto;
+      }
+    }
   }
 }
