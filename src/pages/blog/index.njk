@@ -17,7 +17,7 @@ layout: layouts/base.njk
           {% if post.data.thumbnail %}
             <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" class="blog-preview-image">
           {% endif %}
-          <h2>
+          <h2 class="blog-post-title">
             <a href="{{ post.url }}">
               <span class="link-to-article"></span>
               {{ post.data.title }}
@@ -27,9 +27,8 @@ layout: layouts/base.njk
             {{ post.data.date | formatBlogDate }}
           </time>
           {% if post.data.excerpt %}
-            <p>{{ post.data.excerpt }}</p>
+            <p class="blog-post-excerpt">{{ post.data.excerpt }}</p>
           {% endif %}
-          {# <a href="{{ post.url }}" class="read-more">Read More →</a> #}
         </article>
       {% endfor %}
     </div>
