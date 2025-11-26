@@ -1,20 +1,21 @@
 ---
+title: How to be the best bartender ever
 layout: layouts/blog.njk
-title: First post
-date: 2025-10-06T10:58:00.000+02:00
-thumbnail: https://4wealtu5e8.ucarecd.net/4e6df728-2e96-425a-bf14-963ddba7c8be/
-excerpt: This is the excerpt for the blog post.
+date: 2025-11-19T10:58:00.000+02:00
+thumbnail: https://4wealtu5e8.ucarecd.net/1eab1836-a7dd-4dcc-a49f-2ae4e9bb15b8/
+excerpt: This is the excerpt for the blog post. It can be multiple sentences. Like this and even this.
 ---
 Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
 
 Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
 
-![this is the alt text](https://4wealtu5e8.ucarecd.net/1eab1836-a7dd-4dcc-a49f-2ae4e9bb15b8/ "this is the title")
+![This is the caption for the image](https://4wealtu5e8.ucarecd.net/1eab1836-a7dd-4dcc-a49f-2ae4e9bb15b8/ "this is the title")
 
 Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
 
 Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
 
-![](https://4wealtu5e8.ucarecd.net/8728ff71-a3c7-47fe-8667-f4cce6a55d6a/ "food img")
+![This is the caption](https://4wealtu5e8.ucarecd.net/8728ff71-a3c7-47fe-8667-f4cce6a55d6a/ "food img")
 
 Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+
