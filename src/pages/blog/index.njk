@@ -23,7 +23,7 @@ layout: layouts/base.njk
               {{ post.data.title }}
             </a>
           </h2>
-          <time class="post-date" datetime="{{ post.data.date | isoDate }}">
+          <time class="blog-post-date" datetime="{{ post.data.date | isoDate }}">
             {{ post.data.date | formatBlogDate }}
           </time>
           {% if post.data.excerpt %}
