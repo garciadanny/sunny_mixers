@@ -52,6 +52,12 @@
   }
 }
 
+.no-blog-posts-message {
+  text-align: center;
+  margin: 2rem auto;
+  color: var(--paragraph-color-secondary);
+}
+
 /* Small tablets/large phones in landscape */
 @media (min-width: 576px) {
 
