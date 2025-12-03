@@ -1,5 +1,7 @@
 # Sunny Mixers Website & Blog
 
+**Last updated: 12/03/2025**
+
 ## Overview
 This code is hosted and stored on Github.
 
@@ -9,7 +11,7 @@ It allows individuals or team to track changes, share work, and manage versions 
 ## URLs
 * **Main site**: https://sunnymixers.com
 * **Blog**: https://sunnymixers.com/blog
-* **Admin site for blog**: https://sunnymixers.com/admin
+* **Admin site for blog**: https://sunny-mixers.netlify.app/admin
 
 ## Blog
 In order to access to admin site and create blog posts, you must be a collaborator
