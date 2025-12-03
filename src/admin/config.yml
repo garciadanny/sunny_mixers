@@ -2,6 +2,7 @@ backend:
   name: github
   repo: garciadanny/sunny_mixers 
   branch: main 
+publish_mode: editorial_workflow
 media_folder: "src/assets/images/uploads"
 media_library:
   name: uploadcare
