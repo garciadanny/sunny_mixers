@@ -16,7 +16,8 @@ It allows individuals or team to track changes, share work, and manage versions 
 ## Blog
 In order to access to admin site and create blog posts, you must be a collaborator
 to this codebase on Github. To add collaborators to this codebase, please visit
-[settings > collaborators > manage access].
+[settings > collaborators > manage access]. Here's a [demo] explaining how to
+use the admin site to create blog posts. 
 
 ## Contributing to the codebase
 If you're a developer, please reade the [CONTRIBUTING] doc to get an understanding
@@ -24,3 +25,4 @@ of the codebase and how to contribute to it.
 
 [CONTRIBUTING]: /CONTRIBUTING.md
 [settings > collaborators > manage access]: https://github.com/garciadanny/sunny_mixers/settings/access
+[demo]: /docs/creating-blog-posts.mp4
