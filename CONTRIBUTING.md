@@ -1,10 +1,12 @@
 # Contributing
 
+**Last updated: 12/03/2025**
+
 ## Overview
 The codebase is made up of HTML, CSS, and very little Javascript, and uses
 [Eleventy (11ty)] for static site generation.
 
-As of the time of this writing (12/2025), there are 5 distinct pages on the site:
+As of the time of this writing, there are 5 distinct pages on the site:
 1. The home page (aka: the index page)
 2. The mixology info page
 3. The contact page
@@ -135,8 +137,56 @@ this means if you ever wanted to swap Decap CMS for a different blog-authoring
 solution, it would be straightfoward to do so - you're not tied into a single
 vendor.
 
+## Hosting
+### Github hosting
+The website is currently hosted using [Github Pages]. It's a free site hosting
+service that takes the files straight from the codebase and publishes a website.
+The only caveat is that the codebase must be public on Github in order for this
+to be free. Since these HTML, CSS, and JS files are already displayed when
+users visit the site, there's not much benefit to keeping this private. This is
+setup in [settings > pages]. 
+
+### Netlify hosting
+It's important to note that the Decap CMS user interface for drafting and publishing
+blog posts is only accessible to authenticated (logged-in) users and authentication
+is handled by Github (this is why you need to be a collaborator on the Github codebase).
+
+Decap uses an OAuth flow to authenticate with Github. There are many ways to
+accomplish this with this site. One free and straightforward way to accomplish
+this without needing to make any code changes to the site, is to instead host this
+site with Netlify instead of Github pages. This is because Netlify provides
+a free OAuth service that handles authentication between Github and the Decap
+CMS. As of the time of this writing, there's a version of the site that's hosted
+on Netlify that has authentication enabled. You can access that
+[Netlify version of the site here]. The Decap UI is currently only available when
+visiting it from this site. It'll still successfully create blog posts that are
+published to `sunnymixers.com/blog` since blog posts are commited to the codebase,
+so this won't block you from creating blog posts today. If you'd like to migrate
+away from Github pages and to Netlify, here's the [documentation].
+
+
+## Deployments
+As of the time of this writing, since hosting is configured through Github
+pages, to deploy changes to the site so that they're accessible to the world, 
+simply commit and push changes to the main branch on Github (origin). The site
+will be automatically deployed via the [build-and-deploy] Github workflow.
+
+## Local Development
+1. You'll need to have `node` installed. This project was created using `node v20.19.5`
+but it may work with other versions as well.
+
+2. Run `npm install` to install dependencies.
+
+3. To run the development server, run `npm run dev` from a terminal session. Then, 
+visit `http://localhost:9090/`. It'll automatically reload the server and the
+browser window when you make file changes.
 
 [Eleventy (11ty)]: https://www.11ty.dev/
 [nunjucks]: https://mozilla.github.io/nunjucks/templating.html
 [uploadcare]: https://uploadcare.com/
 [Decap CMS]: https://decapcms.org/ 
+[Github Pages]: https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages
+[settings > pages]: https://github.com/garciadanny/sunny_mixers/settings/pages
+[Netlify version of the site here]: https://sunny-mixers.netlify.app/admin
+[documentation]: /MIGRATE-TO-NETLIFY.md
+[build-and-deploy]: /.github/workflows/build-and-deploy.yml
