@@ -18,7 +18,8 @@ In order to access to admin site and create blog posts, you must be a collaborat
 to this codebase on Github. To add collaborators to this codebase, please visit
 [settings > collaborators > manage access]. Here's a [demo] explaining how to
 use the admin site to create blog posts and here's [another demo] explaining 
-how to add videos to a blog post.
+how to add videos to a blog post. To view the videos, you'll have to click
+"view raw" to download the videos first.
 
 ## Contributing to the codebase
 If you're a developer, please reade the [CONTRIBUTING] doc to get an understanding
