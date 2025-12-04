@@ -32,6 +32,12 @@ article {
       margin-top: 0.5rem;
     }
   }
+
+  iframe {
+    display: block;
+    margin: 4rem auto;
+    max-width: 99%;
+  }
 }
 
 /* Tablets and up*/
@@ -42,6 +48,10 @@ article {
         max-width: 50%;
         margin: auto;
       }
+    }
+
+    iframe {
+      max-width: 100%;
     }
   }
 }
